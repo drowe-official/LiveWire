@@ -1,9 +1,13 @@
-package com.livewire.livewire.data
+package com.livewire.app.data
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceFragmentCompat
-import com.livewire.livewire.R
+import com.livewire.app.R
+
+/**
+ * The settings activity class. Activities derive from AppCompatActivity.
+ */
 
 class SettingsActivity : AppCompatActivity() {
 

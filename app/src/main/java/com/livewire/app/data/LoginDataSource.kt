@@ -1,10 +1,10 @@
-package com.livewire.livewire.data
+package com.livewire.app.data
 
-import com.livewire.livewire.data.model.LoggedInUser
+import com.livewire.app.data.model.LoggedInUser
 import java.io.IOException
 
 /**
- * Class that handles authentication w/ login credentials and retrieves user information.
+ * A class that defines login data sources.
  */
 class LoginDataSource {
 

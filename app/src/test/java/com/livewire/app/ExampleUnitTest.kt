@@ -1,4 +1,4 @@
-package com.livewire.livewire
+package com.livewire.app
 
 import org.junit.Test
 

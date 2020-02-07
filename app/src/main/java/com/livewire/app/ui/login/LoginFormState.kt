@@ -1,7 +1,7 @@
-package com.livewire.livewire.ui.login
+package com.livewire.app.ui.login
 
 /**
- * Data validation state of the login form.
+ * Data class to hold a username login error, password login error, and if the data is valid
  */
 data class LoginFormState(
     val usernameError: Int? = null,

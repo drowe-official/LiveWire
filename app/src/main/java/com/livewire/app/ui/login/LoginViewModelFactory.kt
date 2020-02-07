@@ -1,9 +1,9 @@
-package com.livewire.livewire.ui.login
+package com.livewire.app.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.livewire.livewire.data.LoginDataSource
-import com.livewire.livewire.data.LoginRepository
+import com.livewire.app.data.LoginDataSource
+import com.livewire.app.data.LoginRepository
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.

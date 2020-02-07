@@ -1,13 +1,13 @@
-package com.livewire.livewire.ui.login
+package com.livewire.app.ui.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import android.util.Patterns
-import com.livewire.livewire.data.LoginRepository
-import com.livewire.livewire.data.Result
+import com.livewire.app.data.LoginRepository
+import com.livewire.app.data.Result
 
-import com.livewire.livewire.R
+import com.livewire.app.R
 
 class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel() {
 
@@ -20,7 +20,6 @@ class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel()
     fun login(username: String, password: String) {
         // can be launched in a separate asynchronous job
         val result = loginRepository.login(username, password)
-
         if (result is Result.Success) {
             _loginResult.value =
                 LoginResult(success = LoggedInUserView(displayName = result.data.displayName))

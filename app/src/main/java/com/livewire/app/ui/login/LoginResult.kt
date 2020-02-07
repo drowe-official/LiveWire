@@ -1,4 +1,4 @@
-package com.livewire.livewire.ui.login
+package com.livewire.app.ui.login
 
 /**
  * Authentication result : success (user details) or error message.

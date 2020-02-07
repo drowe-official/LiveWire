@@ -1,4 +1,4 @@
-package com.livewire.livewire.ui.login
+package com.livewire.app.ui.login
 
 import android.app.Activity
 import androidx.lifecycle.Observer
@@ -15,14 +15,18 @@ import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
 
-import com.livewire.livewire.R
+import com.livewire.app.R
 import android.content.Intent
+
+/**
+ * The login activity class. Activities derive from AppCompatActivity.
+ */
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var loginViewModel: LoginViewModel
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) { // sets up login activity
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_login)
@@ -47,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
             if (loginState.passwordError != null) {
                 password.error = getString(loginState.passwordError)
             }
-        })
+        }) // LiveData.observe(LifecycleOwner owner, Observer<? super T> observer)
 
         loginViewModel.loginResult.observe(this@LoginActivity, Observer {
             val loginResult = it ?: return@Observer
@@ -98,7 +102,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun updateUiWithUser(model: LoggedInUserView) {
+    private fun updateUiWithUser(model: LoggedInUserView) { // update UI
         val welcome = getString(R.string.welcome)
         val displayName = model.displayName
         // TODO : initiate successful logged in experience
@@ -107,7 +111,7 @@ class LoginActivity : AppCompatActivity() {
             "$welcome $displayName",
             Toast.LENGTH_LONG
         ).show()
-        val intent = Intent(this, MainActivity::class.java).apply {
+        val intent = Intent(this, MainActivity::class.java).apply { // defines an intent. usually used to swap to another activity
 
         }
         startActivity(intent)

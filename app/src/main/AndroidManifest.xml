@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.livewire.livewire">
+    package="com.livewire.app">
 
     <application
         android:allowBackup="true"
@@ -20,7 +20,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.livewire.livewire.MainActivity" />
+                android:value="com.livewire.app.MainActivity" />
         </activity>
         <activity
             android:name=".ui.login.LoginActivity"

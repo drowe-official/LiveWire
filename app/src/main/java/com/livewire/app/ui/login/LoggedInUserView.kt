@@ -1,7 +1,7 @@
-package com.livewire.livewire.ui.login
+package com.livewire.app.ui.login
 
 /**
- * User details post authentication that is exposed to the UI
+ * Data fields available to logged in users.
  */
 data class LoggedInUserView(
     val displayName: String
