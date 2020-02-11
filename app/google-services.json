@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "502392281024",
+    "firebase_url": "https://livewire-ca.firebaseio.com",
+    "project_id": "livewire-ca",
+    "storage_bucket": "livewire-ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502392281024:android:77fcad359ec027668b5a25",
+        "android_client_info": {
+          "package_name": "com.livewire.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502392281024-ui877iq60bguft4b2sbks0468s13mbhd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.livewire.app",
+            "certificate_hash": "b550e077101a611a28e175418a75b9c0bb797437"
+          }
+        },
+        {
+          "client_id": "502392281024-4em0r49g4183egqeov5m51rcldmujtmf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxc-jGONgwVjv_iuWQniRVoFu27XOuOh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502392281024-4em0r49g4183egqeov5m51rcldmujtmf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

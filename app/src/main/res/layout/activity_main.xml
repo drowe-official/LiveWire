@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".ui.login.MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/top_navigation_bar"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        app:itemIconTint="@android:color/holo_red_light"
+        app:itemTextColor="@android:color/holo_red_light"
+        app:menu="@menu/topbar">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/banner"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="false"
+        app:itemIconTint="@android:color/holo_red_light"
+        app:itemTextColor="@android:color/holo_red_light"
+        app:menu="@menu/banner">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_navigation_bar"
+        android:layout_above="@id/bottom_navigation_bar">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@android:color/holo_red_light"
+        app:itemTextColor="@android:color/holo_red_light"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/nav">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>
