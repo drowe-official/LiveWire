@@ -27,8 +27,6 @@ class SettingsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val view: View = inflater.inflate(R.layout.fragment_settings, container, false)
-
-
         view.setOnClickListener {
             Log.d("btnSetup", "Selected")
         }
