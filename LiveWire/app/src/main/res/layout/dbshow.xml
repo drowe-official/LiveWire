@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="artists"
+        android:id="@+id/artistslocal"
+        android:layout_width="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/locationlocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:text="location">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/pricerangelocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pricerange"
+        android:layout_below="@id/artistslocal">
+
+    </TextView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:text="start-date"
+        android:id="@+id/startdatelocal"
+        android:layout_below="@id/locationlocal">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start-time"
+        android:id="@+id/starttimelocal"
+        android:layout_below="@id/pricerangelocal">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:layout_marginLeft="200dp"
+        android:id="@+id/statuslocal"
+        android:layout_below="@id/startdatelocal">
+
+    </TextView>
+
+</RelativeLayout>
