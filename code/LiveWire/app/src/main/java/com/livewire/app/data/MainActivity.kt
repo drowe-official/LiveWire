@@ -20,7 +20,6 @@ import androidx.fragment.app.replace
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.FirebaseFirestore
-import com.livewire.app.outwork.SpotifyAuth
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener{
 
@@ -134,22 +133,6 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
     fun faceplug(view: View) {
 
-    }
-
-    fun spotifyplug(view: View) {
-        val auth= SpotifyAuth()
-        auth.Authorize(view)
-
-
-
-        fun onRequestCodeClicked() {
-            val request = getAuthenticationRequest(AuthorizationResponse.Type.CODE)
-            AuthorizationClient.openLoginActivity(this, AUTH_CODE_REQUEST_CODE, request)
-        }
-    }
-    public void onRequestCodeClicked() {
-        final AuthorizationRequest request = getAuthenticationRequest(AuthorizationResponse.Type.CODE);
-        AuthorizationClient.openLoginActivity(this, AUTH_CODE_REQUEST_CODE, request);
     }
 
     fun back(){
