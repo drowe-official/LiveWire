@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/customlayout"
+    android:theme="@style/frag"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="art"
+        android:id="@+id/artistslocal"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:textColor="@color/teal">
+
+    </TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="loc"
+        android:id="@+id/locationslocal"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/artistslocal">
+
+    </TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="pr"
+        android:id="@+id/pricerangelocal"
+        android:layout_below="@id/locationslocal"
+        android:layout_width="200dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="sd"
+        android:id="@+id/startdatelocal"
+        android:layout_below="@id/pricerangelocal"
+        android:layout_toRightOf="@id/pricerangelocal"
+        android:layout_width="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="st"
+        android:layout_below="@id/pricerangelocal"
+        android:id="@+id/starttimelocal"
+        android:layout_width="200dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="stat"
+        android:layout_below="@id/locationslocal"
+        android:layout_toRightOf="@id/starttimelocal"
+        android:id="@+id/statuslocal"
+        android:layout_width="wrap_content">
+
+    </TextView>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@id/starttimelocal"
+        android:background="@color/teal">
+
+    </View>
+
+
+</RelativeLayout>

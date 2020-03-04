@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:clickable="true"
+    android:id="@+id/post_frag"
+    android:focusable="true">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:backgroundTint="@color/teal">
+    </Button>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/text"
+        android:id="@+id/posttext"
+        android:layout_below="@id/back">
+
+        <EditText
+            android:id="@+id/post_edt_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="auto"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:selectAllOnFocus="false"
+            android:textColorHint="@color/teal"
+            android:hint="Write Something..."
+            android:maxLines="3"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/imagebtn"
+        android:layout_width="350dp"
+        android:layout_height="330dp"
+        android:layout_below="@id/posttext"
+        android:layout_centerHorizontal="true"
+        android:text="Add Image"
+        android:layout_marginTop="10dp"
+        android:drawableBottom="@android:drawable/ic_input_add">
+
+    </Button>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imagebtn"
+        android:layout_centerHorizontal="true"
+        android:text="POST">
+
+    </Button>
+
+
+
+</RelativeLayout>

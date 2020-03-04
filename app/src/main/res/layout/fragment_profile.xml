@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:theme="@style/frag"
+    android:id="@+id/profilefrag"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/viewtopprofile"
+        android:layout_height="2dp"
+        android:background="@color/teal">
+    </View>
+
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/profilelinear"
+    android:layout_below="@+id/viewtopprofile">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="148dp"
+            android:id="@+id/imageProfile"
+            android:padding="1.2dp"
+            android:backgroundTint="@color/teal">
+
+        </ImageView>
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="23dp"
+            android:id="@+id/username"
+            android:text="Stinky"
+            android:layout_toRightOf="@id/imageProfile">
+        </TextView>
+        <View
+            android:layout_width="210dp"
+            android:layout_toRightOf="@id/imageProfile"
+            android:id="@+id/viewusername"
+            android:layout_height="2dp"
+            android:background="@color/teal"
+            android:layout_below="@id/username">
+
+        </View>
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="23dp"
+            android:layout_toRightOf="@id/imageProfile"
+            android:layout_below="@id/viewusername"
+            android:text="From: Drogheda"
+            android:id="@+id/from">
+        </TextView>
+
+        <TextView
+            android:id="@+id/userdescr"
+            android:layout_width="260dp"
+            android:layout_height="94dp"
+            android:layout_below="@id/fromview"
+            android:layout_toRightOf="@id/imageProfile"
+            android:text="Uh oh"></TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_toRightOf="@id/imageProfile"
+            android:layout_below="@id/addbutton"
+            android:background="@color/teal"
+            android:id="@+id/fromview">
+
+        </View>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/viewusername"
+            android:background="@drawable/buttonadd"
+            android:id="@+id/addbutton"
+            android:foregroundTint="@color/teal"
+            android:foreground="@android:drawable/ic_menu_add">
+        </Button>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/profilelinear"
+        android:id="@+id/viewbelowprofile"
+        android:background="@color/teal">
+
+    </View>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listviewprofile"
+        android:theme="@style/frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewbelowprofile">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
