@@ -25,16 +25,16 @@
         android:layout_below="@id/back">
 
         <EditText
-            android:id="@+id/post_edt_text"
+            android:id="@+id/posttxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusable="auto"
             android:focusableInTouchMode="true"
-            android:textColor="@color/colorPrimaryDark"
+            android:hint="Share your experience!"
+            android:maxLines="3"
             android:selectAllOnFocus="false"
-            android:textColorHint="@color/teal"
-            android:hint="Write Something..."
-            android:maxLines="3"/>
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/teal" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -51,11 +51,12 @@
     </Button>
 
     <Button
+        android:id="@+id/post"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
         android:layout_below="@id/imagebtn"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:text="POST">
 
     </Button>

@@ -25,12 +25,9 @@ import com.google.firebase.firestore.FirebaseFirestore
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener{
 
     private lateinit var auth: FirebaseAuth
-    private lateinit var logoutBtn: Button
-    private lateinit var updatePass: Button
     private lateinit var viewPager: ViewPager
     private lateinit var bottomNavigationView: BottomNavigationView
     private lateinit var mainPagerAdapter: MainPagerAdapter
-    lateinit var databaseReference: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -14,7 +14,6 @@ import kotlinx.android.synthetic.main.locallistview.view.*
 
 class RecyclerViewAdapter(val artists : ArrayList<String>, val locations : ArrayList<String>, val pricerange : ArrayList<String>, val startdate:ArrayList<String>,val starttime:ArrayList<String>, val status:ArrayList<String>, val context: Context) : RecyclerView.Adapter<ViewHolder>() {
 
-     //Gets the number of animals in the list
     override fun getItemCount(): Int {
          Log.println(Log.ASSERT,"itemcount",artists.size.toString() )
         return artists.size
@@ -35,7 +34,6 @@ class RecyclerViewAdapter(val artists : ArrayList<String>, val locations : Array
 }
 
 class ViewHolder (view: View) : RecyclerView.ViewHolder(view) {
-    // Holds the TextView that will add each animal to
     val mArtists = view.artistslocal
     val mLocations = view.locationslocal
     val mPricerange = view.pricerangelocal
